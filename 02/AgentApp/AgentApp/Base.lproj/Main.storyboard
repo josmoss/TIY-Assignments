@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RRq-rt-sle">
+                                <rect key="frame" x="20" y="40" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upM-kY-ApO">
+                                <rect key="frame" x="20" y="78" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Afternoon, Agent Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJZ-Lv-2wh">
+                                <rect key="frame" x="167" y="234" width="266" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="vjM-UU-PBM">
+                                <rect key="frame" x="180" y="322" width="240" height="212"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijt-RJ-kXf">
+                                <rect key="frame" x="209" y="158" width="182" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="TPQ-z7-Fyq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Authenticate">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="authenticateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWM-pP-XqJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vjM-UU-PBM" firstAttribute="top" secondItem="eJZ-Lv-2wh" secondAttribute="bottom" constant="64" id="0EV-Jv-efB"/>
+                            <constraint firstAttribute="trailing" secondItem="upM-kY-ApO" secondAttribute="trailing" constant="20" id="H95-eu-B2K"/>
+                            <constraint firstItem="upM-kY-ApO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IXJ-qZ-1lM"/>
+                            <constraint firstItem="eJZ-Lv-2wh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Itp-og-n4m"/>
+                            <constraint firstItem="upM-kY-ApO" firstAttribute="top" secondItem="RRq-rt-sle" secondAttribute="bottom" constant="8" id="JWG-3S-8v6"/>
+                            <constraint firstItem="eJZ-Lv-2wh" firstAttribute="top" secondItem="Ijt-RJ-kXf" secondAttribute="bottom" constant="40" id="NYf-Uz-fP3"/>
+                            <constraint firstItem="Ijt-RJ-kXf" firstAttribute="top" secondItem="upM-kY-ApO" secondAttribute="bottom" constant="50" id="OBg-8w-6YQ"/>
+                            <constraint firstItem="RRq-rt-sle" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="bkF-0H-BZY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vjM-UU-PBM" secondAttribute="trailing" constant="160" id="gM1-bF-U0B"/>
+                            <constraint firstItem="vjM-UU-PBM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="j9i-9Q-GJh"/>
+                            <constraint firstItem="Ijt-RJ-kXf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="op3-pj-JtV"/>
+                            <constraint firstItem="vjM-UU-PBM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t4Z-NR-0tX"/>
+                            <constraint firstAttribute="trailing" secondItem="RRq-rt-sle" secondAttribute="trailing" constant="20" id="t54-rL-zah"/>
+                            <constraint firstItem="RRq-rt-sle" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="vnI-Zf-8nQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gM1-bF-U0B"/>
+                                <exclude reference="j9i-9Q-GJh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="authenticateButton" destination="Ijt-RJ-kXf" id="pnP-Ke-fEe"/>
+                        <outlet property="greetingLabel" destination="eJZ-Lv-2wh" id="50H-gi-S1V"/>
+                        <outlet property="passwordTextField" destination="upM-kY-ApO" id="hPX-a2-aCK"/>
+                        <outlet property="usernameTextField" destination="RRq-rt-sle" id="1wM-p3-sJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680" y="391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TIYLogo-1" width="240" height="212"/>
+    </resources>
+</document>
