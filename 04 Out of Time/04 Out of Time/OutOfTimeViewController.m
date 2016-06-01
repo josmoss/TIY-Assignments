@@ -45,8 +45,6 @@
     
 }
 
-
-
 - (IBAction)travelBackButton:(UIButton *)sender {
     
     self.formatter.dateFormat =@"MMddyy";
