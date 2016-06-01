@@ -12,7 +12,7 @@
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *charactersArray;
 @property (strong, nonatomic) StarWarsCharacter *currentCharacter;
 
@@ -33,6 +33,24 @@
     han.spaceship =@"Millenium Falcon";
     
     [self.charactersArray addObject:han];
+    
+    StarWarsCharacter *darth = [[StarWarsCharacter alloc] init];
+    darth.name =@"Darth Vader";
+    darth.spaceship =@"Tie Fighter";
+    
+    [self.charactersArray addObject:darth];
+    
+    StarWarsCharacter *yoda = [[StarWarsCharacter alloc] init];
+    yoda.name =@"Master Yoda";
+    yoda.spaceship =@"Yoda Ship";
+    
+    [self.charactersArray addObject:yoda];
+    
+    StarWarsCharacter *chewy = [[StarWarsCharacter alloc] init];
+    chewy.name =@"Chewbacca";
+    chewy.spaceship =@"Millenium Falcon";
+    
+    [self.charactersArray addObject:chewy];
     
 }
 
