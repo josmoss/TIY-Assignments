@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8D648E71CFF76F900C260D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D648E61CFF76F900C260D2 /* main.m */; };
+		D8D648EA1CFF76F900C260D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D648E91CFF76F900C260D2 /* AppDelegate.m */; };
+		D8D648F01CFF76F900C260D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D648EE1CFF76F900C260D2 /* Main.storyboard */; };
+		D8D648F21CFF76F900C260D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D648F11CFF76F900C260D2 /* Assets.xcassets */; };
+		D8D648F51CFF76F900C260D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D648F31CFF76F900C260D2 /* LaunchScreen.storyboard */; };
+		D8D648FE1CFF94E300C260D2 /* TicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D648FD1CFF94E300C260D2 /* TicketTableViewController.m */; };
+		D8D649011CFFA07600C260D2 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D649001CFFA07600C260D2 /* PickerViewController.m */; };
+		D8D649041CFFA71100C260D2 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D649031CFFA71100C260D2 /* Ticket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8D648E21CFF76F900C260D2 /* 08 Jackpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "08 Jackpot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D648E61CFF76F900C260D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8D648E81CFF76F900C260D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8D648E91CFF76F900C260D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8D648EF1CFF76F900C260D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8D648F11CFF76F900C260D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8D648F41CFF76F900C260D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8D648F61CFF76F900C260D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D648FC1CFF94E300C260D2 /* TicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketTableViewController.h; sourceTree = "<group>"; };
+		D8D648FD1CFF94E300C260D2 /* TicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewController.m; sourceTree = "<group>"; };
+		D8D648FF1CFFA07600C260D2 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		D8D649001CFFA07600C260D2 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		D8D649021CFFA71100C260D2 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		D8D649031CFFA71100C260D2 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D648DF1CFF76F900C260D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8D648D91CFF76F900C260D2 = {
+			isa = PBXGroup;
+			children = (
+				D8D648E41CFF76F900C260D2 /* 08 Jackpot */,
+				D8D648E31CFF76F900C260D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8D648E31CFF76F900C260D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D648E21CFF76F900C260D2 /* 08 Jackpot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8D648E41CFF76F900C260D2 /* 08 Jackpot */ = {
+			isa = PBXGroup;
+			children = (
+				D8D648E81CFF76F900C260D2 /* AppDelegate.h */,
+				D8D648E91CFF76F900C260D2 /* AppDelegate.m */,
+				D8D648FC1CFF94E300C260D2 /* TicketTableViewController.h */,
+				D8D648FD1CFF94E300C260D2 /* TicketTableViewController.m */,
+				D8D648FF1CFFA07600C260D2 /* PickerViewController.h */,
+				D8D649001CFFA07600C260D2 /* PickerViewController.m */,
+				D8D649021CFFA71100C260D2 /* Ticket.h */,
+				D8D649031CFFA71100C260D2 /* Ticket.m */,
+				D8D648EE1CFF76F900C260D2 /* Main.storyboard */,
+				D8D648F11CFF76F900C260D2 /* Assets.xcassets */,
+				D8D648F31CFF76F900C260D2 /* LaunchScreen.storyboard */,
+				D8D648F61CFF76F900C260D2 /* Info.plist */,
+				D8D648E51CFF76F900C260D2 /* Supporting Files */,
+			);
+			path = "08 Jackpot";
+			sourceTree = "<group>";
+		};
+		D8D648E51CFF76F900C260D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D648E61CFF76F900C260D2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8D648E11CFF76F900C260D2 /* 08 Jackpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D648F91CFF76F900C260D2 /* Build configuration list for PBXNativeTarget "08 Jackpot" */;
+			buildPhases = (
+				D8D648DE1CFF76F900C260D2 /* Sources */,
+				D8D648DF1CFF76F900C260D2 /* Frameworks */,
+				D8D648E01CFF76F900C260D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "08 Jackpot";
+			productName = "08 Jackpot";
+			productReference = D8D648E21CFF76F900C260D2 /* 08 Jackpot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8D648DA1CFF76F900C260D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Iron Yard_Joe Moss";
+				TargetAttributes = {
+					D8D648E11CFF76F900C260D2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D8D648DD1CFF76F900C260D2 /* Build configuration list for PBXProject "08 Jackpot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8D648D91CFF76F900C260D2;
+			productRefGroup = D8D648E31CFF76F900C260D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D648E11CFF76F900C260D2 /* 08 Jackpot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8D648E01CFF76F900C260D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D648F51CFF76F900C260D2 /* LaunchScreen.storyboard in Resources */,
+				D8D648F21CFF76F900C260D2 /* Assets.xcassets in Resources */,
+				D8D648F01CFF76F900C260D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D648DE1CFF76F900C260D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D649041CFFA71100C260D2 /* Ticket.m in Sources */,
+				D8D648EA1CFF76F900C260D2 /* AppDelegate.m in Sources */,
+				D8D648FE1CFF94E300C260D2 /* TicketTableViewController.m in Sources */,
+				D8D649011CFFA07600C260D2 /* PickerViewController.m in Sources */,
+				D8D648E71CFF76F900C260D2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8D648EE1CFF76F900C260D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D648EF1CFF76F900C260D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8D648F31CFF76F900C260D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D648F41CFF76F900C260D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8D648F71CFF76F900C260D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8D648F81CFF76F900C260D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8D648FA1CFF76F900C260D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "08 Jackpot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joe.-8-Jackpot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8D648FB1CFF76F900C260D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "08 Jackpot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joe.-8-Jackpot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D648DD1CFF76F900C260D2 /* Build configuration list for PBXProject "08 Jackpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D648F71CFF76F900C260D2 /* Debug */,
+				D8D648F81CFF76F900C260D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D648F91CFF76F900C260D2 /* Build configuration list for PBXNativeTarget "08 Jackpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D648FA1CFF76F900C260D2 /* Debug */,
+				D8D648FB1CFF76F900C260D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8D648DA1CFF76F900C260D2 /* Project object */;
+}
