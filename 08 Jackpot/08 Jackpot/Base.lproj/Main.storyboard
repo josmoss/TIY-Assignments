@@ -29,7 +29,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="eci-tA-Vhw">
-                        <barButtonItem key="leftBarButtonItem" title="Check Ticket" id="GU3-8A-HTd"/>
+                        <barButtonItem key="leftBarButtonItem" title="Check Ticket" id="GU3-8A-HTd">
+                            <connections>
+                                <action selector="checkTicketTapped:" destination="Dka-OV-KIN" id="46u-vI-Hpa"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xfK-SJ-4X7">
                             <connections>
                                 <action selector="addTicket:" destination="Dka-OV-KIN" id="vOp-4X-4Xp"/>
@@ -55,8 +59,20 @@
                     <view key="view" contentMode="scaleToFill" id="Avx-fD-ZHd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-7w-WYs">
+                                <rect key="frame" x="140" y="173" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hGe-7w-WYs" firstAttribute="centerX" secondItem="Avx-fD-ZHd" secondAttribute="centerX" id="4oc-bD-zxP"/>
+                            <constraint firstItem="hGe-7w-WYs" firstAttribute="top" secondItem="GoA-Dq-nr1" secondAttribute="bottom" constant="153" id="Z8V-DG-Vpq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="hGe-7w-WYs" id="i3v-xa-pbf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Raw-lJ-bhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

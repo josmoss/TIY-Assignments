@@ -9,7 +9,7 @@
 #import "TicketTableViewController.h"
 #import "Ticket.h"
 
-@interface TicketTableViewController ()
+@interface TicketTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *ticketsArray;
 @property (nonatomic, strong) Ticket *winningTicket;
@@ -31,7 +31,7 @@
     
     self.winningTicket = [[Ticket alloc] init];
     
-    self.winningTicket.lotteryTicket =@" ";
+    self.winningTicket.lotteryTicket =@"1 24 44 51 19 10";
     
 }
 
@@ -84,8 +84,12 @@
 
 }
 
-
-
-
+- (IBAction)checkTicketTapped:(UIBarButtonItem *)sender {
+    
+    NSLog(@"check Ticket Tapped");
+    
+    [self performSegueWithIdentifier:@"PickerSegue" sender:self];
+    
+}
 
 @end
