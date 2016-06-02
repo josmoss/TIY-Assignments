@@ -9,13 +9,11 @@
 #import "PickerViewController.h"
 #import "Ticket.h"
 
-@interface PickerViewController () {
-    
-    NSArray *_pickerData;
-}
+@interface PickerViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
-@property (strong, nonatomic) Ticket *winningTicket;
+@property (strong, nonatomic) NSMutableArray *numbersArray;
 
 @end
 
@@ -24,9 +22,52 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Initialize Data
-    _pickerData = @[@"Item1", @"Item2", @"Item3", @"Item4", @"Item5", @"Item6"];
+    NSLog(@"viewDidLoad");
 
+    self.numbersArray = [[NSMutableArray alloc] init];
+
+    for(int i=0; i <= 53; i++) {
+        [self.numbersArray addObject:[NSString stringWithFormat:@"%i",i]];
+    }
+
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    NSLog(@"viewDidAppear");
+    
+    NSLog(@"PickerViewController winning ticket %@", self.theWinningTicket.lottoTicketString);
+    
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    NSLog(@"I changed something");
+    
+    NSLog(@"I selected %ld in component %ld", row, component);
+    
+}
+
+    // The number of columns of data
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    
+    return 6;
+}
+
+    // The number of rows of data
+- (NSInteger)PickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    
+    return self.numbersArray.count;
+    
+}
+
+    // The data to return for the row and component (column) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    
+    return [self.numbersArray objectAtIndex:row];
+    
 }
 
 @end

@@ -8,11 +8,13 @@
 
 #import "TicketTableViewController.h"
 #import "Ticket.h"
+#import "PickerViewController.h"
 
 @interface TicketTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *ticketsArray;
 @property (nonatomic, strong) Ticket *winningTicket;
+@property (nonatomic, strong) Ticket *randomTicket;
 
 @end
 
@@ -25,13 +27,47 @@
     
     self.ticketsArray = [[NSMutableArray alloc] init];
     
+    NSLog(@"%@", [self generateRandomNumberString]);
+    
+    self.winningTicket =[self ticketWithRandomNumber];
+    
+    Ticket *randomT = [self ticketWithRandomNumber];
+    
+    if ([self.winningTicket.lottoTicketString isEqualToString:randomT.lottoTicketString]) {
+        NSLog(@"equal");
+    } else {
+        NSLog(@"not equal");
+    }
+    
+    NSLog(@"Winning Number is:%@",self.winningTicket.lottoTicketString);
+    
+}
+
+-(Ticket *)ticketWithRandomNumber {
+    
+    Ticket *t = [[Ticket alloc] init];
+    t.lottoTicketString = [self generateRandomNumberString];
+    return t;
+}
+
+-(NSString *)generateRandomNumberString {
+    
+    int num1 = arc4random_uniform(53)+1;
+    int num2 = arc4random_uniform(53)+1;
+    int num3 = arc4random_uniform(53)+1;
+    int num4 = arc4random_uniform(53)+1;
+    int num5 = arc4random_uniform(53)+1;
+    int num6 = arc4random_uniform(53)+1;
+
+    return [NSString stringWithFormat:@"%i %i %i %i %i %i", num1, num2, num3, num4, num5, num6];
+    
 }
 
 -(void)chooseWinningTicket {
     
     self.winningTicket = [[Ticket alloc] init];
     
-    self.winningTicket.lotteryTicket =@"1 24 44 51 19 10";
+    self.winningTicket.lottoTicketString =@"1 24 44 51 19 10";
     
 }
 
@@ -43,15 +79,10 @@
     
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 1;
-}
+#pragma mark - Table view data sourc
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return self.ticketsArray.count;
 }
 
@@ -61,7 +92,7 @@
     
     Ticket *theTicket = [self.ticketsArray objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = theTicket.lotteryTicket;
+    cell.textLabel.text = theTicket.lottoTicketString;
     
     return cell;
 }
@@ -76,7 +107,7 @@
     
     ticket.lastName =@"Moss";
     ticket.firstName =@"Joe";
-    ticket.lotteryTicket =@"3 16 24 11 6 50";
+    ticket.lottoTicketString =@"3 16 24 11 6 50";
     
     [self.ticketsArray addObject:ticket];
     
