@@ -107,12 +107,18 @@
     
     ticket.lastName =@"Moss";
     ticket.firstName =@"Joe";
-    ticket.lottoTicketString =@"3 16 24 11 6 50";
+    ticket.lottoTicketString = [self generateRandomNumberString];
     
     [self.ticketsArray addObject:ticket];
     
     [self.tableView reloadData];
 
+}
+
+- (IBAction)unwindSegue:(UIStoryboardSegue *)segue {
+    
+    NSLog(@"unwindSegue");
+    
 }
 
 - (IBAction)checkTicketTapped:(UIBarButtonItem *)sender {

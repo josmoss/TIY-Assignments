@@ -31,7 +31,7 @@
                     <navigationItem key="navigationItem" id="eci-tA-Vhw">
                         <barButtonItem key="leftBarButtonItem" title="Check Ticket" id="GU3-8A-HTd">
                             <connections>
-                                <action selector="checkTicketTapped:" destination="Dka-OV-KIN" id="Fyf-OX-Ict"/>
+                                <action selector="checkTicketTapped:" destination="Dka-OV-KIN" id="lqN-MY-VWN"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xfK-SJ-4X7">
@@ -41,7 +41,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="fCW-Mw-1Uq" kind="presentation" identifier="PickerSegue" id="Ok2-vU-z6N"/>
+                        <segue destination="fCW-Mw-1Uq" kind="show" identifier="PickerSegue" id="O0k-Q5-yhH"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ijp-86-kgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,37 +60,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxO-D5-qv0">
-                                <rect key="frame" x="277" y="28" width="46" height="36"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Back"/>
-                            </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-7w-WYs">
-                                <rect key="frame" x="140" y="173" width="320" height="216"/>
+                                <rect key="frame" x="140" y="217" width="320" height="216"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="fCW-Mw-1Uq" id="mtc-Zg-iOo"/>
-                                    <outlet property="delegate" destination="fCW-Mw-1Uq" id="HT5-qp-TSa"/>
+                                    <outlet property="dataSource" destination="fCW-Mw-1Uq" id="8Gq-bu-gnl"/>
+                                    <outlet property="delegate" destination="fCW-Mw-1Uq" id="ZIL-43-Rhu"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmp-pm-lkE">
+                                <rect key="frame" x="283" y="455" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="80O-QG-xei" kind="unwind" unwindAction="unwindSegue:" id="n5X-lk-qEy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hGe-7w-WYs" firstAttribute="centerX" secondItem="Avx-fD-ZHd" secondAttribute="centerX" id="4oc-bD-zxP"/>
-                            <constraint firstItem="WxO-D5-qv0" firstAttribute="top" secondItem="GoA-Dq-nr1" secondAttribute="bottom" constant="8" id="Oej-7u-uds"/>
+                            <constraint firstItem="Wmp-pm-lkE" firstAttribute="centerX" secondItem="Avx-fD-ZHd" secondAttribute="centerX" id="PT1-j2-vnX"/>
                             <constraint firstItem="hGe-7w-WYs" firstAttribute="top" secondItem="GoA-Dq-nr1" secondAttribute="bottom" constant="153" id="Z8V-DG-Vpq"/>
-                            <constraint firstItem="WxO-D5-qv0" firstAttribute="centerX" secondItem="Avx-fD-ZHd" secondAttribute="centerX" id="ZFn-ec-jX2"/>
+                            <constraint firstItem="fL2-Tg-4gQ" firstAttribute="top" secondItem="Wmp-pm-lkE" secondAttribute="bottom" constant="71" id="v5g-MB-8dQ"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="backButton" destination="WxO-D5-qv0" id="MBL-En-O8g"/>
-                        <outlet property="pickerView" destination="hGe-7w-WYs" id="0LZ-4n-P88"/>
+                        <outlet property="pickerView" destination="hGe-7w-WYs" id="xvg-kU-gmd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Raw-lJ-bhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="80O-QG-xei" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="-906"/>
+            <point key="canvasLocation" x="1743" y="-906"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kOw-Ze-NY9">
