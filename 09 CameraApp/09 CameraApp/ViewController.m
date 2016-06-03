@@ -7,12 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "NextViewController.h"
 
 @interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (strong, nonatomic) UIImagePickerController *pickerController;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) UIImageView *currentImage;
+@property (weak, nonatomic) UIImage *currentImage;
+@property (weak, nonatomic) IBOutlet UIButton *showDetailButton;
 
 @end
 
@@ -39,6 +41,8 @@
     
     [self.pickerController dismissViewControllerAnimated:YES completion:nil];
     
+    self.showDetailButton.enabled = NO;
+    
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
@@ -48,6 +52,31 @@
     self.imageView.image = self.currentImage;
     
     [self.pickerController dismissViewControllerAnimated:YES completion:nil];
+    
+    self.showDetailButton.enabled = YES;
+    
+}
+
+- (IBAction)detailButtonTapped:(UIButton *)sender {
+    
+//    [self performSegueWithIdentifier:@"DetailSegue" sender:nil];
+    
+}
+
+
+-(IBAction)unwindSegue: (UIStoryboardSegue *)segue {
+
+    NSLog(@"Unwind Segue");
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NextViewController * viewController = (NextViewController *) segue.destinationViewController;
+    
+    viewController.image = self.currentImage;
+    
+    
+
 }
 
 @end
