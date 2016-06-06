@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
 @interface ProfileViewController : UIViewController
+
+@property (strong, nonatomic) Movie *theMovie;
 
 @end

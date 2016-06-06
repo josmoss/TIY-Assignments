@@ -8,12 +8,14 @@
 
 #import "MovieTableViewController.h"
 #import "Movie.h"
+#import "ProfileViewController.h"
 
 @interface MovieTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *movieListTableView;
 @property (nonatomic, strong) NSMutableArray *moviesArray;
 @property (nonatomic, strong) Movie *listMovies;
+@property (nonatomic, strong) UIImage *theImage;
 
 @end
 
@@ -27,6 +29,8 @@
     [self loadJSONFile];
     
 }
+
+#pragma mark - JSON data
 
 -(void)loadJSONFile {
     
@@ -116,6 +120,12 @@
 
 #pragma mark - Table view data source
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 1;
+    
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return [self.moviesArray count];
@@ -127,8 +137,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell" forIndexPath:indexPath];
     
     self.listMovies = [self.moviesArray objectAtIndex:indexPath.row];
+    self.theImage = [self imageFromURLString:self.listMovies.posterPath];
     
     cell.textLabel.text = self.listMovies.originalTitle;
+    
+    cell.imageView.image = self.theImage;
     
     return cell;
 }
@@ -137,7 +150,21 @@
     
     self.listMovies = [self.moviesArray objectAtIndex:indexPath.row];
     
+    [self performSegueWithIdentifier:@"MovieDetailSegue" sender:nil];
+    
 }
 
+#pragma mark - Navigation Methods
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"MovieDetailSegue"]) {
+        
+        ProfileViewController *controller = (ProfileViewController *)segue.destinationViewController;
+        
+        controller.theMovie = self.listMovies;
+    }
+    
+}
 
 @end

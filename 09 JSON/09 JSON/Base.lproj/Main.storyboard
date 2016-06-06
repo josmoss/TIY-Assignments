@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Movie Table View Controller-->
@@ -49,12 +50,36 @@
                     <view key="view" contentMode="scaleToFill" id="OW3-T2-2qb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EHP-tG-RUP">
+                                <rect key="frame" x="20" y="64" width="560" height="386"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8R-JM-SCc">
+                                <rect key="frame" x="258" y="506" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K8R-JM-SCc" firstAttribute="centerX" secondItem="OW3-T2-2qb" secondAttribute="centerX" id="49m-YQ-p9a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHP-tG-RUP" secondAttribute="trailing" id="Fyq-v5-Fg6"/>
+                            <constraint firstItem="EHP-tG-RUP" firstAttribute="top" secondItem="5ck-vA-oOS" secondAttribute="bottom" id="KWG-oX-bJm"/>
+                            <constraint firstItem="EHP-tG-RUP" firstAttribute="centerX" secondItem="OW3-T2-2qb" secondAttribute="centerX" id="OHP-a3-Ivw"/>
+                            <constraint firstItem="wsw-ZX-gzA" firstAttribute="top" secondItem="K8R-JM-SCc" secondAttribute="bottom" constant="73" id="cUc-5Y-Aq5"/>
+                            <constraint firstItem="EHP-tG-RUP" firstAttribute="leading" secondItem="OW3-T2-2qb" secondAttribute="leadingMargin" id="ejn-TU-HJ0"/>
+                            <constraint firstItem="wsw-ZX-gzA" firstAttribute="top" secondItem="EHP-tG-RUP" secondAttribute="bottom" constant="150" id="oQE-ac-N5T"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieTitleLabel" destination="K8R-JM-SCc" id="Tfd-HR-R9X"/>
+                        <outlet property="posterImageView" destination="EHP-tG-RUP" id="je5-8V-wxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fm-3A-GqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="58"/>
+            <point key="canvasLocation" x="1079" y="58"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ffw-36-AyK">
