@@ -1,0 +1,489 @@
+{
+	"href": "https://api.spotify.com/v1/artists/0OdUWJ0sBjDrqHygGUXeCF/albums?offset=0&limit=20&album_type=single,album,compilation,appears_on,ep",
+	"items": [{
+		"album_type": "album",
+		"available_markets": ["AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PL", "PT", "SK", "ES", "SE", "CH", "TR", "UY", "US", "GB", "AD", "LI", "MC"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/6N3W6VPGBBxZcYajhZB75a"
+		},
+		"href": "https://api.spotify.com/v1/albums/6N3W6VPGBBxZcYajhZB75a",
+		"id": "6N3W6VPGBBxZcYajhZB75a",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/4fc744dcef3d10c75f20d9f4c8be91672f328f0a",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/30b2322a0816087683ad6defebe88c258445848d",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/33382c56a32f3c32530360c91853d6e968cca0fd",
+			"width": 64
+		}],
+		"name": "Acoustic at The Ryman (Live)",
+		"type": "album",
+		"uri": "spotify:album:6N3W6VPGBBxZcYajhZB75a"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AR", "AU", "AT", "BE", "BO", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "GB", "AD", "LI", "MC", "ID"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/5XGwgWYQQK8tHwoNuLMCP9"
+		},
+		"href": "https://api.spotify.com/v1/albums/5XGwgWYQQK8tHwoNuLMCP9",
+		"id": "5XGwgWYQQK8tHwoNuLMCP9",
+		"images": [{
+			"height": 637,
+			"url": "https://i.scdn.co/image/1999c268c03ce8784903e1686ca4c4a9fb075d84",
+			"width": 640
+		}, {
+			"height": 299,
+			"url": "https://i.scdn.co/image/26a1f419decffb88f7a8e055ddfcf9fc0e6faefc",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/82a8e79bf2cd0f1af32565643575bfe23192cde3",
+			"width": 64
+		}],
+		"name": "Mirage Rock",
+		"type": "album",
+		"uri": "spotify:album:5XGwgWYQQK8tHwoNuLMCP9"
+	}, {
+		"album_type": "album",
+		"available_markets": ["HK", "ID", "PH", "SG"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/5J5nntsfliaVhSFjLU5oRr"
+		},
+		"href": "https://api.spotify.com/v1/albums/5J5nntsfliaVhSFjLU5oRr",
+		"id": "5J5nntsfliaVhSFjLU5oRr",
+		"images": [{
+			"height": 637,
+			"url": "https://i.scdn.co/image/18dd63c4881a7206ad35e3c8a1b95fa2022fac13",
+			"width": 640
+		}, {
+			"height": 299,
+			"url": "https://i.scdn.co/image/0a049a52195a112e7f3f805f0ca4a3ff98280420",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/2a8c5e2929bbecb865fef18de31c55146e821ff7",
+			"width": 64
+		}],
+		"name": "Mirage Rock",
+		"type": "album",
+		"uri": "spotify:album:5J5nntsfliaVhSFjLU5oRr"
+	}, {
+		"album_type": "album",
+		"available_markets": ["BR"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/41gqjEKZzNCCE5XSxjfSTq"
+		},
+		"href": "https://api.spotify.com/v1/albums/41gqjEKZzNCCE5XSxjfSTq",
+		"id": "41gqjEKZzNCCE5XSxjfSTq",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/98d0cf6b3feaef5247155c839f12a10178c9da44",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/b77a2e58cf325f5774935dbd396292ae36f49aa8",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/e996e0f5e41eac10737480b0d7af3a3a9ec559e3",
+			"width": 64
+		}],
+		"name": "Mirage Rock",
+		"type": "album",
+		"uri": "spotify:album:41gqjEKZzNCCE5XSxjfSTq"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "GB", "AD", "LI", "MC", "ID"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/08fkw9uDP2KET6cPIl74Xo"
+		},
+		"href": "https://api.spotify.com/v1/albums/08fkw9uDP2KET6cPIl74Xo",
+		"id": "08fkw9uDP2KET6cPIl74Xo",
+		"images": [{
+			"height": 581,
+			"url": "https://i.scdn.co/image/8b02f8cd658b5865076ae66bd5af9a1e00d5d6e4",
+			"width": 640
+		}, {
+			"height": 272,
+			"url": "https://i.scdn.co/image/32f90c16292cd043f23b6f7a6f31d340a639f8de",
+			"width": 300
+		}, {
+			"height": 58,
+			"url": "https://i.scdn.co/image/e2bf125890f05882d92cfe80eadf05a2aca20b37",
+			"width": 64
+		}],
+		"name": "Infinite Arms",
+		"type": "album",
+		"uri": "spotify:album:08fkw9uDP2KET6cPIl74Xo"
+	}, {
+		"album_type": "album",
+		"available_markets": ["BR"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/4MJf5L1S8FupN2CHqAAZIp"
+		},
+		"href": "https://api.spotify.com/v1/albums/4MJf5L1S8FupN2CHqAAZIp",
+		"id": "4MJf5L1S8FupN2CHqAAZIp",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/464ff066a127e0cb4cc2c3c368f60ba591e8c544",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/be5c6bac9a1e1e3d456e5263ad3e518f5d425240",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/787bf595fcb483e43ed487c29eaaf67b0a6541fa",
+			"width": 64
+		}],
+		"name": "Infinite Arms",
+		"type": "album",
+		"uri": "spotify:album:4MJf5L1S8FupN2CHqAAZIp"
+	}, {
+		"album_type": "album",
+		"available_markets": ["FR", "GB", "IE"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/3rNHgtH2XDgigp4X4KTDLq"
+		},
+		"href": "https://api.spotify.com/v1/albums/3rNHgtH2XDgigp4X4KTDLq",
+		"id": "3rNHgtH2XDgigp4X4KTDLq",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/79b5b6e62dbbd15dd280d7bfca74eeafc0d08865",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/4cce673eae34ab0fd789ca9d98ab302881c3f56d",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/17a236916d87dc2d3df6476d07316b6a0bc843d0",
+			"width": 64
+		}],
+		"name": "Cease To Begin",
+		"type": "album",
+		"uri": "spotify:album:3rNHgtH2XDgigp4X4KTDLq"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "GR", "GT", "HN", "HK", "HU", "IS", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "AD", "LI", "MC", "ID"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/4a1jgSYZGMTR6Yp6IiSkbO"
+		},
+		"href": "https://api.spotify.com/v1/albums/4a1jgSYZGMTR6Yp6IiSkbO",
+		"id": "4a1jgSYZGMTR6Yp6IiSkbO",
+		"images": [{
+			"height": 639,
+			"url": "https://i.scdn.co/image/05900a63be51b8e01c7435a7f25101d65922c299",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/0d2ffc36603e1c623b54a7dbaccf0067d8e98b5e",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/42bc3c1daa99e789497c03f6676c1db7f9d0ca25",
+			"width": 64
+		}],
+		"name": "Cease To Begin",
+		"type": "album",
+		"uri": "spotify:album:4a1jgSYZGMTR6Yp6IiSkbO"
+	}, {
+		"album_type": "album",
+		"available_markets": ["FR", "GB", "IE"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/2HQ5DO7xiGSAixNdbj0dAw"
+		},
+		"href": "https://api.spotify.com/v1/albums/2HQ5DO7xiGSAixNdbj0dAw",
+		"id": "2HQ5DO7xiGSAixNdbj0dAw",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/f6214d57e79581c1596298e84ba5d56323c8c91c",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/6d605033be5aca6955466ae6adfebf1eed2b3f9b",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/351afcc589f1c6e63ab147216161d916a723fc9d",
+			"width": 64
+		}],
+		"name": "Everything All The Time",
+		"type": "album",
+		"uri": "spotify:album:2HQ5DO7xiGSAixNdbj0dAw"
+	}, {
+		"album_type": "album",
+		"available_markets": ["AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "GR", "GT", "HN", "HK", "HU", "IS", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "AD", "LI", "MC", "ID"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/5uMfshtC2Jwqui0NUyUYIL"
+		},
+		"href": "https://api.spotify.com/v1/albums/5uMfshtC2Jwqui0NUyUYIL",
+		"id": "5uMfshtC2Jwqui0NUyUYIL",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/34ff274a8d62d490923c39cdea879c72f49bbbfc",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/04210e4c88c1bde5f120e2e407f89edd0c1fa340",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/df28a0f234b6da5c7b57c11cea73c7be0ffd7fc5",
+			"width": 64
+		}],
+		"name": "Everything All The Time",
+		"type": "album",
+		"uri": "spotify:album:5uMfshtC2Jwqui0NUyUYIL"
+	}, {
+		"album_type": "single",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/7FDQQSA96gHWwhHHgu8ZHG"
+		},
+		"href": "https://api.spotify.com/v1/albums/7FDQQSA96gHWwhHHgu8ZHG",
+		"id": "7FDQQSA96gHWwhHHgu8ZHG",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/d5a038ae5087553bb3e07c3b74a1d4e39a784227",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/1bdcd2397f0a4c93c895c9445e51d6983758ed59",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/a3433bb5f5377049c0c14cf19722628ddd074684",
+			"width": 64
+		}],
+		"name": "Whatever, Wherever",
+		"type": "album",
+		"uri": "spotify:album:7FDQQSA96gHWwhHHgu8ZHG"
+	}, {
+		"album_type": "single",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/2KNLpxRfOKrdQ7olUxMjIl"
+		},
+		"href": "https://api.spotify.com/v1/albums/2KNLpxRfOKrdQ7olUxMjIl",
+		"id": "2KNLpxRfOKrdQ7olUxMjIl",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/37d79c7641fa0978421c908d6eeefb13e29cd8a7",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/e8ac1f1991dbd51bf3f80f3fc59e00275a0b4506",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/4946ce2dc3426963af3ce49ec294bcb3ef0e8728",
+			"width": 64
+		}],
+		"name": "Whatever, Wherever",
+		"type": "album",
+		"uri": "spotify:album:2KNLpxRfOKrdQ7olUxMjIl"
+	}, {
+		"album_type": "single",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/6mKjconelGkzsKRs3v6Sfg"
+		},
+		"href": "https://api.spotify.com/v1/albums/6mKjconelGkzsKRs3v6Sfg",
+		"id": "6mKjconelGkzsKRs3v6Sfg",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/37d79c7641fa0978421c908d6eeefb13e29cd8a7",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/e8ac1f1991dbd51bf3f80f3fc59e00275a0b4506",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/4946ce2dc3426963af3ce49ec294bcb3ef0e8728",
+			"width": 64
+		}],
+		"name": "Solemn Oath",
+		"type": "album",
+		"uri": "spotify:album:6mKjconelGkzsKRs3v6Sfg"
+	}, {
+		"album_type": "single",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/65F4MYzYqVKre6uyJprwji"
+		},
+		"href": "https://api.spotify.com/v1/albums/65F4MYzYqVKre6uyJprwji",
+		"id": "65F4MYzYqVKre6uyJprwji",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/d5a038ae5087553bb3e07c3b74a1d4e39a784227",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/1bdcd2397f0a4c93c895c9445e51d6983758ed59",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/a3433bb5f5377049c0c14cf19722628ddd074684",
+			"width": 64
+		}],
+		"name": "Solemn Oath",
+		"type": "album",
+		"uri": "spotify:album:65F4MYzYqVKre6uyJprwji"
+	}, {
+		"album_type": "single",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/5xdJu6SSeuRobdaNgAW7U3"
+		},
+		"href": "https://api.spotify.com/v1/albums/5xdJu6SSeuRobdaNgAW7U3",
+		"id": "5xdJu6SSeuRobdaNgAW7U3",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/37d79c7641fa0978421c908d6eeefb13e29cd8a7",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/e8ac1f1991dbd51bf3f80f3fc59e00275a0b4506",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/4946ce2dc3426963af3ce49ec294bcb3ef0e8728",
+			"width": 64
+		}],
+		"name": "In A Drawer",
+		"type": "album",
+		"uri": "spotify:album:5xdJu6SSeuRobdaNgAW7U3"
+	}, {
+		"album_type": "single",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/1azHMXuwJlUUx8lo8qGcMF"
+		},
+		"href": "https://api.spotify.com/v1/albums/1azHMXuwJlUUx8lo8qGcMF",
+		"id": "1azHMXuwJlUUx8lo8qGcMF",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/d5a038ae5087553bb3e07c3b74a1d4e39a784227",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/1bdcd2397f0a4c93c895c9445e51d6983758ed59",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/a3433bb5f5377049c0c14cf19722628ddd074684",
+			"width": 64
+		}],
+		"name": "In A Drawer",
+		"type": "album",
+		"uri": "spotify:album:1azHMXuwJlUUx8lo8qGcMF"
+	}, {
+		"album_type": "single",
+		"available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/2z248fw4oXAQhzjqsaXt0G"
+		},
+		"href": "https://api.spotify.com/v1/albums/2z248fw4oXAQhzjqsaXt0G",
+		"id": "2z248fw4oXAQhzjqsaXt0G",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/406563df01c112946414cb0e727cd75553ffcaee",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/b489a3deb31af23830bfc94742848b8bb1dbf1e8",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/da44da5feff4bb375f451fceef58991f2b60f2ee",
+			"width": 64
+		}],
+		"name": "Casual Party",
+		"type": "album",
+		"uri": "spotify:album:2z248fw4oXAQhzjqsaXt0G"
+	}, {
+		"album_type": "single",
+		"available_markets": ["CA", "MX", "US"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/2vlFcUmXjaQ2wOaGcVNDSR"
+		},
+		"href": "https://api.spotify.com/v1/albums/2vlFcUmXjaQ2wOaGcVNDSR",
+		"id": "2vlFcUmXjaQ2wOaGcVNDSR",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/fd6f7aeea9e3eee53035f73cd2963fd236f33fba",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/fdf5408546cb7de0d094ef82b1872ff7cd6ac2de",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/c63301e783c24dd5f76252821e5ba6478261bbc1",
+			"width": 64
+		}],
+		"name": "Casual Party",
+		"type": "album",
+		"uri": "spotify:album:2vlFcUmXjaQ2wOaGcVNDSR"
+	}, {
+		"album_type": "single",
+		"available_markets": ["AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "GR", "GT", "HN", "HK", "HU", "IS", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "AD", "LI", "MC", "ID"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/3qdwPanKCuUNV7n5KFVbTI"
+		},
+		"href": "https://api.spotify.com/v1/albums/3qdwPanKCuUNV7n5KFVbTI",
+		"id": "3qdwPanKCuUNV7n5KFVbTI",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/5e22865034ee75673ac257ba09b07a0303db0c52",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/c01d08e9d101720b0fcf678c2f8618d8acb7d6a1",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/7295d9ec8c3f43239c8ef891812c7985c7ce25bc",
+			"width": 64
+		}],
+		"name": "The Funeral (Excision Remix)",
+		"type": "album",
+		"uri": "spotify:album:3qdwPanKCuUNV7n5KFVbTI"
+	}, {
+		"album_type": "single",
+		"available_markets": ["FR", "GB", "IE"],
+		"external_urls": {
+			"spotify": "https://open.spotify.com/album/1CxgjUw5HWSszMKeqxZMww"
+		},
+		"href": "https://api.spotify.com/v1/albums/1CxgjUw5HWSszMKeqxZMww",
+		"id": "1CxgjUw5HWSszMKeqxZMww",
+		"images": [{
+			"height": 640,
+			"url": "https://i.scdn.co/image/7ac28fc49f89e9997dd6ff9b5d81ba6e4a8b1b14",
+			"width": 640
+		}, {
+			"height": 300,
+			"url": "https://i.scdn.co/image/de616111733c1af1972ddedf18746056230248a3",
+			"width": 300
+		}, {
+			"height": 64,
+			"url": "https://i.scdn.co/image/8eff2f7c0af94fd8be8cfb0a5c9a2f5b27b7544f",
+			"width": 64
+		}],
+		"name": "The Funeral (Excision Remix)",
+		"type": "album",
+		"uri": "spotify:album:1CxgjUw5HWSszMKeqxZMww"
+	}],
+	"limit": 20,
+	"next": "https://api.spotify.com/v1/artists/0OdUWJ0sBjDrqHygGUXeCF/albums?offset=20&limit=20&album_type=single,album,compilation,appears_on,ep",
+	"offset": 0,
+	"previous": null,
+	"total": 52
+}
