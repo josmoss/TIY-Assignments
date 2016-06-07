@@ -1,0 +1,43 @@
+{
+	"results": [{
+		"charName": "Indiana Jones",
+		"firstmovieappeared": "Raiders of the Lost Ark",
+		"liveordie": "live"
+	}, {
+		"charName": "Rene Belloq",
+		"firstmovieappeared": "Raiders of the Lost Ark",
+		"liveordie": "die"
+	}, {
+		"charName": "Marcus Brody",
+		"firstmovieappeared": "Raiders of the Lost Ark",
+		"liveordie": "live"
+	}, {
+		"charName": "Marion Ravenwood",
+		"firstmovieappeared": "Raiders of the Lost Ark",
+		"liveordie": "live"
+	}, {
+		"charName": "Short Round",
+		"firstmovieappeared": "Temple of Doom",
+		"liveordie": "live"
+	}, {
+		"charName": "Henry Jones, Sr.",
+		"firstmovieappeared": "The Last Crusade",
+		"liveordie": "live"
+	}, {
+		"charName": "Walter Donovan",
+		"firstmovieappeared": "The Last Crusade",
+		"liveordie": "die"
+	}, {
+		"charName": "Elsa Schneider",
+		"firstmovieappeared": "The Last Crusade",
+		"liveordie": "die"
+	}, {
+		"charName": "Kazim",
+		"firstmovieappeared": "The Last Crusade",
+		"liveordie": "die"
+	}, {
+		"charName": "Grail Knight",
+		"firstmovieappeared": "The Last Crusade",
+		"liveordie": "die"
+	}]
+}
