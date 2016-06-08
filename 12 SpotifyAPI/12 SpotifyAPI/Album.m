@@ -10,6 +10,7 @@
 
 @implementation Album
 
+#pragma mark - method
 -(instancetype) initWithDictionary:(NSDictionary *)dict {
     
     if ( (self = [super init])) {
@@ -24,7 +25,9 @@
         self.albumId = [dict valueForKey:@"id"];
         
     }
+    
     return self;
+    
 }
 
 @end

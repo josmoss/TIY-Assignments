@@ -15,5 +15,4 @@
 @property (nonatomic, strong) NSString *albumId;
 @property (nonatomic, strong) NSString *name;
 
-
 @end

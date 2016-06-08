@@ -20,13 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self parseJSON];
+    
+}
+
+#pragma mark - JSON
+
+-(void)parseJSON {
+    
     self.albumsArray = [[NSMutableArray alloc] init];
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"boh" ofType:@"json"];
     
     NSString *jsonString = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     
-//    NSLog(@"jsonString == %@", jsonString);
+    //    NSLog(@"jsonString == %@", jsonString);
     
     NSData *data = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     
@@ -40,25 +48,25 @@
         
         if (jsonError == nil) {
             
-//            NSLog(@"jsonDictionary == %@", jsonDictionary);
+            //            NSLog(@"jsonDictionary == %@", jsonDictionary);
             
             NSArray *itemsArray = [jsonDictionary valueForKey:@"items"];
-//            NSLog(@"itemsArray == %@", itemsArray);
+            //            NSLog(@"itemsArray == %@", itemsArray);
             
             for(NSDictionary *itemDict in itemsArray) {
-              
+                
                 Album *theAlbum = [[Album alloc] initWithDictionary:itemDict];
                 [self.albumsArray addObject:theAlbum];
                 
             }
             
-//            NSLog(@"The number of albums parsed is %ld", self.albumsArray.count);
+            //            NSLog(@"The number of albums parsed is %ld", self.albumsArray.count);
         } else {
-//            NSLog(@"An error occured == %@", [jsonError localizedDescription]);
+            //            NSLog(@"An error occured == %@", [jsonError localizedDescription]);
         }
-        } else {
-            NSLog(@"I was not able to create the NSData");
-        }
+    } else {
+        NSLog(@"I was not able to create the NSData");
+    }
     
 }
 
