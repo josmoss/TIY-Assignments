@@ -60,9 +60,9 @@
                 
             }
             
-            //            NSLog(@"The number of albums parsed is %ld", self.albumsArray.count);
+                        NSLog(@"The number of albums parsed is %ld", self.albumsArray.count);
         } else {
-            //            NSLog(@"An error occured == %@", [jsonError localizedDescription]);
+                        NSLog(@"An error occured == %@", [jsonError localizedDescription]);
         }
     } else {
         NSLog(@"I was not able to create the NSData");

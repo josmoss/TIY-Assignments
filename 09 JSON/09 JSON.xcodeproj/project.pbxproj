@@ -69,10 +69,10 @@
 				D8FD53DE1D021A8B00FBEE2E /* AppDelegate.h */,
 				D8FD53DF1D021A8B00FBEE2E /* AppDelegate.m */,
 				D8FD53F21D021D1400FBEE2E /* Controller */,
-				D8FD53F41D021DA400FBEE2E /* Model */,
 				D8FD53F31D021D8700FBEE2E /* View */,
 				D8FD53E41D021A8B00FBEE2E /* Main.storyboard */,
 				D8FD53E71D021A8B00FBEE2E /* Assets.xcassets */,
+				D8FD53F41D021DA400FBEE2E /* Model */,
 				D8FD53E91D021A8B00FBEE2E /* LaunchScreen.storyboard */,
 				D8FD53EC1D021A8B00FBEE2E /* Info.plist */,
 				D8FD53FB1D02211500FBEE2E /* popular.json */,
@@ -341,6 +341,7 @@
 				D8FD53F11D021A8B00FBEE2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
