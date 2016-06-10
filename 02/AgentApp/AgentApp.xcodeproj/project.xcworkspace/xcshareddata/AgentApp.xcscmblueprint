@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DEA9B0239D4366095BF3F048D0982DA12AD44D7D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "470D121038D8EDD7BD423E2E7F06C530AD7419E0" : 0,
+    "DEA9B0239D4366095BF3F048D0982DA12AD44D7D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "22654362-08AF-4C21-B773-82BB4B24BEEF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "470D121038D8EDD7BD423E2E7F06C530AD7419E0" : "TIY-Course\/",
+    "DEA9B0239D4366095BF3F048D0982DA12AD44D7D" : "TIY-Assignments\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AgentApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "02\/AgentApp\/AgentApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/TIY-Mobile-May-2016\/TIY-Course.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "470D121038D8EDD7BD423E2E7F06C530AD7419E0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/josmoss\/TIY-Assignments.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DEA9B0239D4366095BF3F048D0982DA12AD44D7D"
+    }
+  ]
+}

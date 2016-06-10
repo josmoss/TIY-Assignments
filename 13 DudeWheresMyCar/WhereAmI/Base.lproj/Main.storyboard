@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cJz-nx-USV">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fg0-ES-Wu9">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem image="nav" id="LXI-VG-Lwy">
+                                        <connections>
+                                            <action selector="locationButton:" destination="BYZ-38-t0r" id="M5s-uV-f7L"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="amX-sr-dqS"/>
+                                    <barButtonItem image="sat" id="gQn-Pq-83n">
+                                        <connections>
+                                            <action selector="satButton:" destination="BYZ-38-t0r" id="5rj-ov-LF7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vpO-o7-Jd5"/>
+                                    <barButtonItem image="satstreet" id="rcJ-K7-R1k">
+                                        <connections>
+                                            <action selector="hybridButton:" destination="BYZ-38-t0r" id="IH5-gd-KTt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="UIj-gg-fBI"/>
+                                    <barButtonItem image="map" id="BR7-2x-AtQ">
+                                        <connections>
+                                            <action selector="mapButton:" destination="BYZ-38-t0r" id="7Nk-Hd-2vG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fg0-ES-Wu9" secondAttribute="bottom" id="1Iy-HQ-NE2"/>
+                            <constraint firstAttribute="trailing" secondItem="cJz-nx-USV" secondAttribute="trailing" id="HNy-hI-afA"/>
+                            <constraint firstItem="fg0-ES-Wu9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QIQ-kg-uhR"/>
+                            <constraint firstItem="cJz-nx-USV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pYp-B8-c8g"/>
+                            <constraint firstAttribute="trailing" secondItem="fg0-ES-Wu9" secondAttribute="trailing" id="qWa-eY-uZ5"/>
+                            <constraint firstItem="cJz-nx-USV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rca-qd-znN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cJz-nx-USV" secondAttribute="bottom" id="vKK-VQ-hI3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="cJz-nx-USV" id="qem-Ge-BGl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" width="32" height="32"/>
+        <image name="nav" width="32" height="32"/>
+        <image name="sat" width="32" height="32"/>
+        <image name="satstreet" width="32" height="32"/>
+    </resources>
+</document>
