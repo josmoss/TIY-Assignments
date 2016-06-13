@@ -17,7 +17,6 @@
 @interface MenuViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) NSMutableArray *restaurantsArray;
 @property (nonatomic, strong) NSMutableArray *dishesArray;
 @property (nonatomic, strong) Dish *listDishes;
 @property (nonatomic, strong) UIImage *theImage;
@@ -38,7 +37,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [self.restaurantsArray count];
+    return [self.theRestaurant.dishesArray count];
     
 }
 
@@ -46,11 +45,11 @@
     
     DishTableViewCell *cell = (DishTableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"DishCell" forIndexPath:indexPath];
     
-    Restaurant *theDishes = [self.restaurantsArray objectAtIndex:indexPath.row];
+    Dish *theDishes = [self.theRestaurant.dishesArray objectAtIndex:indexPath.row];
     
-//    cell.restaurantLabel.text = theDishes.name;
-//    
-//    cell.restaurantImageView.image = [UIImage imageNamed:theRestaurant.imageNameString];
+    cell.dishLabel.text = theDishes.dishName;
+    
+//    cell.DishImageView.image = [UIImage imageNamed:theDish.imageNameString];
     
     return cell;
 }
@@ -58,7 +57,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    self.listDishes = [self.dishesArray objectAtIndex:indexPath.row];
+    self.listDishes = [self.theRestaurant.dishesArray objectAtIndex:indexPath.row];
     
     [self performSegueWithIdentifier:@"RateSegue" sender:nil];
     

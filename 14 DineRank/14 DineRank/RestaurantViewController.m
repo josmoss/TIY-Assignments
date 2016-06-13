@@ -17,7 +17,6 @@
 @interface RestaurantViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *restaurantsArray;
-@property (nonatomic, strong) NSMutableArray *dishesArray;
 @property (nonatomic, strong) Restaurant *listRestaurants;
 @property (nonatomic, strong) UIImage *theImage;
 
@@ -35,7 +34,7 @@
 - (void)loadJSONFile {
     
     self.restaurantsArray = [[NSMutableArray alloc] init];
-    self.dishesArray = [[NSMutableArray alloc] init];
+   // self.dishesArray = [[NSMutableArray alloc] init];
     
     NSDictionary *theDictionary = [self parseJSONFile];
     
@@ -190,7 +189,7 @@
                 NSLog(@"I could not parse the price");
             }
             
-            [self.dishesArray addObject:theDish];
+            [theRestaurant.dishesArray addObject:theDish];
         }
         
         [self.restaurantsArray addObject:theRestaurant];
@@ -217,15 +216,15 @@
             
         }
         
-        for(Dish *d in self.dishesArray) {
-            
-            NSLog(@"The dish name is %@", d.dishName);
-            NSLog(@"The dish description is %@", d.dishDescription);
-            NSLog(@"The rating is %@", d.rating);
-            NSLog(@"The dish image name is %@", d.dishImageName);
-            NSLog(@"The price is %@", d.price);
-            
-        }
+//        for(Dish *d in self.dishesArray) {
+//            
+//            NSLog(@"The dish name is %@", d.dishName);
+//            NSLog(@"The dish description is %@", d.dishDescription);
+//            NSLog(@"The rating is %@", d.rating);
+//            NSLog(@"The dish image name is %@", d.dishImageName);
+//            NSLog(@"The price is %@", d.price);
+//            
+//        }
         
     }
     
