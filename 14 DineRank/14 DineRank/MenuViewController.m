@@ -6,32 +6,69 @@
 //  Copyright © 2016 Iron Yard_Joe Moss. All rights reserved.
 //
 
-#import "MenuViewController.h"
 
-@interface MenuViewController ()
+#import "MenuViewController.h"
+#import "DishTableViewCell.h"
+#import "RestaurantViewController.h"
+#import "RateDishViewController.h"
+#import "Restaurant.h"
+#import "Dish.h"
+
+@interface MenuViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *restaurantsArray;
+@property (nonatomic, strong) NSMutableArray *dishesArray;
+@property (nonatomic, strong) Dish *listDishes;
+@property (nonatomic, strong) UIImage *theImage;
 
 @end
 
 @implementation MenuViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if(self.theRestaurant != nil) {
+        
+        NSLog(@"name == %@", self.theRestaurant.name);
+        
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return [self.restaurantsArray count];
+    
 }
 
-/*
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    DishTableViewCell *cell = (DishTableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"DishCell" forIndexPath:indexPath];
+    
+    Restaurant *theDishes = [self.restaurantsArray objectAtIndex:indexPath.row];
+    
+//    cell.restaurantLabel.text = theDishes.name;
+//    
+//    cell.restaurantImageView.image = [UIImage imageNamed:theRestaurant.imageNameString];
+    
+    return cell;
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    self.listDishes = [self.dishesArray objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"RateSegue" sender:nil];
+    
+}
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    [self performSegueWithIdentifier:@"RateSegue" sender:nil];
 }
-*/
 
 @end
