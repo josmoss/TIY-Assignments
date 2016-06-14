@@ -8,16 +8,21 @@
 
 import UIKit
 
-class AgentViewController: UIViewController {
+class AgentViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var authButton: UIButton!
     @IBOutlet weak var greetingLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == userTextField {
+            passwordTextField.becomeFirstResponder()
+            
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
     }
 
     @IBAction func authTapped(sender: UIButton) {
