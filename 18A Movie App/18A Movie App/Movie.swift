@@ -24,5 +24,24 @@ class Movie {
     var voteCount: Int = 0
     var video: Bool = false
     var voteAverage: Double = 0
+    
+    init() {
+        self.posterPath = ""
+        self.adult = false
+        self.overview = ""
+        self.releaseDate = ""
+        self.movieId = 0
+        self.originalTitle = ""
+        self.originalLanguage = ""
+        self.title = ""
+        self.backdropPath = ""
+        self.popularity = 0
+        self.voteCount = 0
+        self.video = false
+        self.voteAverage = 0
+
+    }
 
 }
+
+

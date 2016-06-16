@@ -5,35 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Movie Table View Controller-->
-        <scene sceneID="yYn-Il-IBs">
-            <objects>
-                <tableViewController id="2cI-lg-Gds" customClass="MovieTableViewController" customModule="_8A_Movie_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="b5h-Gg-v2R">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="p1n-P0-Fk7">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p1n-P0-Fk7" id="DK6-Rc-UzS">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="2cI-lg-Gds" id="uxT-Wa-339"/>
-                            <outlet property="delegate" destination="2cI-lg-Gds" id="obA-NF-nkI"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="6bJ-6T-O1H"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ns-gr-CTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1527" y="382"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="afH-gB-Enk">
             <objects>
@@ -45,12 +16,70 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2cI-lg-Gds" kind="relationship" relationship="rootViewController" id="Pqm-wE-ZHU"/>
+                        <segue destination="kvl-bj-phD" kind="relationship" relationship="rootViewController" id="luF-FJ-BVP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGn-iF-jmu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="845" y="382"/>
+        </scene>
+        <!--Movie Table View Controller-->
+        <scene sceneID="Rm5-NA-gfU">
+            <objects>
+                <tableViewController id="kvl-bj-phD" customClass="MovieTableViewController" customModule="_8A_Movie_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" id="Taf-bS-9Y8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="96" id="LMS-eN-fQ8" customClass="MovieTableViewCell" customModule="_8A_Movie_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="96"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LMS-eN-fQ8" id="0Tf-Ho-mgj">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KFs-Ak-Da6">
+                                            <rect key="frame" x="8" y="8" width="100" height="79"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="pkL-qT-clR"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZp-FE-NKd">
+                                            <rect key="frame" x="133" y="37" width="459" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="zhZ-Kj-JWK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KZp-FE-NKd" firstAttribute="leading" secondItem="KFs-Ak-Da6" secondAttribute="trailing" constant="25" id="EPr-3i-3fD"/>
+                                        <constraint firstItem="KZp-FE-NKd" firstAttribute="centerY" secondItem="0Tf-Ho-mgj" secondAttribute="centerY" id="Tph-pJ-gz7"/>
+                                        <constraint firstAttribute="bottom" secondItem="KFs-Ak-Da6" secondAttribute="bottom" constant="8" id="Vc1-z4-jIM"/>
+                                        <constraint firstAttribute="trailing" secondItem="KZp-FE-NKd" secondAttribute="trailing" constant="8" id="WSh-Fj-2U8"/>
+                                        <constraint firstItem="KFs-Ak-Da6" firstAttribute="top" secondItem="0Tf-Ho-mgj" secondAttribute="top" constant="8" id="X2V-rS-KLc"/>
+                                        <constraint firstItem="KFs-Ak-Da6" firstAttribute="leading" secondItem="0Tf-Ho-mgj" secondAttribute="leading" constant="8" id="xJz-RD-urM"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="posterImageView" destination="KFs-Ak-Da6" id="aQS-Uy-Kfr"/>
+                                    <outlet property="titleLabel" destination="KZp-FE-NKd" id="oGt-b9-5ZQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kvl-bj-phD" id="Dbe-nM-gLS"/>
+                            <outlet property="delegate" destination="kvl-bj-phD" id="tpm-KC-ejf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="t0A-OW-ckc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttf-YD-5sF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="378"/>
         </scene>
     </scenes>
 </document>
